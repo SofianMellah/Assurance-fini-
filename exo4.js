@@ -48,6 +48,8 @@ if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance
 
 // Fin tarif vert
 
+
+
 // Début tarif bleu
 
 if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
