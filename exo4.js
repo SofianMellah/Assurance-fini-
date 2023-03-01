@@ -16,9 +16,10 @@ if (nombreaccidents >= 3) {
 // Fin refus
 
 
+
 // Début tarif rouge
 
-if ((age < 25 && anneePermis < 2 && nombreaccidents < 1) || (age < 25 && anneePermis > 2 && nombreaccidents > 0) || (age > 25 && anneePermis > 2 && nombreaccidents == 2)) {
+if ((age < 25 && anneePermis < 2 && nombreaccidents < 1) || (age < 25 && anneePermis >= 2 && nombreaccidents > 0) || (age >= 25 && anneePermis >= 2 && nombreaccidents == 2)) {
     console.log(`Tarif rouge`)
     document.getElementById("résultat").value = `Tarif rouge`
 }
@@ -29,7 +30,7 @@ if ((age < 25 && anneePermis < 2 && nombreaccidents < 1) || (age < 25 && anneePe
 
 // Début tarif orange
 
-if ((age < 25 && anneePermis > 2 && nombreaccidents < 1) || (age > 25 && anneePermis > 2 && nombreaccidents < 2 && nombreaccidents >= 1) || (age > 25 && anneePermis < 2 && nombreaccidents < 1) || (age < 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age < 25 && anneePermis > 2 && nombreaccidents > 0 && ancienneteAssurance >= 1) || (age > 25 && anneePermis > 2 && nombreaccidents == 2 && ancienneteAssurance >= 1)) {
+if ((age < 25 && anneePermis >= 2 && nombreaccidents < 1) || (age >= 25 && anneePermis >= 2 && nombreaccidents < 2 && nombreaccidents >= 1) || (age >= 25 && anneePermis < 2 && nombreaccidents < 1) || (age < 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age < 25 && anneePermis >= 2 && nombreaccidents > 0 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis >= 2 && nombreaccidents == 2 && ancienneteAssurance >= 1)) {
     console.log(`Tarif orange`)
     document.getElementById("résultat").value = `Tarif orange`
 }
@@ -40,7 +41,7 @@ if ((age < 25 && anneePermis > 2 && nombreaccidents < 1) || (age > 25 && anneePe
 
 // Début tarif vert
 
-if ((age > 25 && anneePermis > 2 && nombreaccidents < 1) || (age < 25 && anneePermis > 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age > 25 && anneePermis > 2 && nombreaccidents < 2 && nombreaccidents >= 1 && ancienneteAssurance >= 1) || (age > 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
+if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1) || (age < 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis >= 2 && nombreaccidents < 2 && nombreaccidents >= 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
     console.log(`Tarif vert`)
     document.getElementById("résultat").value = `Tarif vert`
 }
