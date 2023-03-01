@@ -41,9 +41,19 @@ if ((age < 25 && anneePermis >= 2 && nombreaccidents < 1) || (age >= 25 && annee
 
 // Début tarif vert
 
-if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1) || (age < 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis >= 2 && nombreaccidents < 2 && nombreaccidents >= 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
+if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance < 1) || (age < 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis >= 2 && nombreaccidents < 2 && nombreaccidents >= 1 && ancienneteAssurance >= 1) || (age >= 25 && anneePermis < 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
     console.log(`Tarif vert`)
     document.getElementById("résultat").value = `Tarif vert`
 }
-}
+
 // Fin tarif vert
+
+// Début tarif bleu
+
+if ((age >= 25 && anneePermis >= 2 && nombreaccidents < 1 && ancienneteAssurance >= 1)) {
+    console.log(`Tarif bleu`)
+    document.getElementById("résultat").value = `Tarif bleu`
+}
+
+// Fin tarif bleu
+}
