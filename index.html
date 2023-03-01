@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assurance</title>
+</head>
+<body>
+    <h1>Exercice 5</h1><br>
+    <p>Réalisez une application de gestion qui calcul la prime d'assurance d'un client.<br>
+    Une compagnie d'assurance automobile propose à ses clients quatre familles de tarifs identifiables par une couleur, du moins au plus onéreux : tarifs rouge, orange, vert et bleu.<br>
+    Le tarif dépend de la situation du conducteur :<br>
+    • un conducteur de moins de 25 ans et titulaire du permis depuis moins de deux ans, se voit attribuer le tarif rouge, si toutefois il n'a jamais été responsable d'accident.Sinon, la compagnie refuse de l'assurer.<br>
+    • un conducteur de moins de 25 ans et titulaire du permis depuis plus de deux ans, ou de plus de 25 ans mais titulaire du permis depuis moins de deux ans a le droit au tarif orange s'il n'a jamais provoqué d'accident, au tarif rouge pour un accident, sinon il est refusé.<br>
+    • un conducteur de plus de 25 ans titulaire du permis depuis plus de deux ans bénéficie du tarif vert s'il n'est à l'origine d'aucun accident et du tarif orange pour un accident, du tarif rouge pour deux accidents, et refusé au-delà.<br>
+    • De plus, pour encourager la fidélité des clients acceptés, la compagnie propose un contrat de la couleur immédiatement la plus avantageuse s'il est entré dans la maison depuis plus d'un an.
+    Dans tous les cas on refuse un conducteur qui aurait plus de 3 accidents.</p><br><br>
+    <label for="">Merci de preciser votre âge :</label> <input id="age" placeholder="Âge" type="number"><br><br>
+    <label for="">Merci de renseigner vous avez combien d'années de permis :</label> <input id="annéepermis" placeholder="Années de permis" type="number"><br><br>
+    <label for="">Merci de renseigner si vous avez eu aucun, un ou plusieurs accident :</label> <input id="accident" placeholder="Nombre d'accident(s)" type="number"><br><br>
+    <label for="">Merci de renseigner votre ancienneté dans notre assurance, en années :</label> <input id="ancienneté" placeholder="Ancienneté" type="number"><br><br><br>
+    <button onclick=calculerprime() >Calculez votre prime d'assurance</button><br><br><br>
+    <label for="">Vous pouvez bénéficier du :</label> <input id="résultat" placeholder="Résultat" type="text">
+    <script src="./exo4.js"></script>
+</body>
+</html>
